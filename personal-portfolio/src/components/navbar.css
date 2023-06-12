@@ -1,0 +1,14 @@
+.custom-navbar {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .navbar-link {
+    font-size: 18px;
+  }
+  
+  .logo-image {
+    width: 150px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
