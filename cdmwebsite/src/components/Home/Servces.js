@@ -1,12 +1,12 @@
-import WebDevelopment from "../assets/img/WebDevelopment.svg"
-import DigitalMarketing from "../assets/img/digital marketing.png"
-import SocialMedia from "../assets/img/socialmeda.png"
-import Brainding from "../assets/img/Branding.png";
+import WebDevelopment from "../../assets/img/WebDevelopment.svg"
+import DigitalMarketing from "../../assets/img/digital marketing.png"
+import SocialMedia from "../../assets/img/socialmeda.png"
+import Brainding from "../../assets/img/Branding.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../assets/img/color-sharp.png";
-import DModeling from "../assets/img/3D modeling.png";
-import Video from "../assets/img/Video.png"
+import colorSharp from "../../assets/img/color-sharp.png";
+import DModeling from "../../assets/img/3D modeling.png";
+import Video from "../../assets/img/Video.png"
 export const Services = () => {
   const responsive = {
     superLargeDesktop: {
@@ -77,9 +77,11 @@ export const Services = () => {
     fontWeight: 'bold',
     cursor: 'pointer',
   }}
+  onClick={() => (window.location.href = '/services')}
 >
   Know More
 </button>
+
 
                     </div>
                 </div>
