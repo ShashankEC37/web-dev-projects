@@ -1,4 +1,4 @@
-import Logo from "../assets/img/Logo.png";
+import Logo from "../assets/img/CDM Logo.jpg";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import navIcon1 from '../assets/img/nav-icon1.svg';
