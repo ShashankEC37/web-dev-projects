@@ -23,7 +23,7 @@ export const Banner = () => {
   }, [text])
 
   const handleClick = () => {
-    const phoneNumber = '7259561303'; // Replace with your phone number
+    const phoneNumber = '+91 7259561303'; // Replace with your phone number
     const message = 'Hey can i know more about your services.'; // Replace with your default message
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
