@@ -11,4 +11,26 @@
     width: 150px; /* Adjust the width to your desired size */
     height: auto; /* Maintain aspect ratio */
   }
+
+  
+  .social-icon-row {
+    display: flex;
+  }
+  
+  .social-icon-row a {
+    margin-right: 10px; /* Adjust the margin as per your requirement */
+  }
+  
+  .social-icon-row a:last-child {
+    margin-right: 0;
+  }
+
+  .connect-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  
   

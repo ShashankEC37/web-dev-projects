@@ -44,7 +44,7 @@ export const Contact = () => {
       return;
     }
 
-    setButtonText('Sending...');
+    setButtonText('Sending....');
     const currentDate = new Date();
     const dateTime = currentDate.toLocaleString();
 

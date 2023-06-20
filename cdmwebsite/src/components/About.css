@@ -1,0 +1,47 @@
+.about-container {
+    padding-top: 150px;
+    text-align: left;
+  }
+  
+  .section {
+    background-color: #FFFF00;
+    border-radius: 10px;
+    padding: 20px 0;
+  }
+  .tagline{
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+  }
+  .vision{
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    padding: 20px 0;
+  }
+  
+  .title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    color: black;
+  }
+  .vision-item {
+    padding: 40px;
+    background-color: #FFFF00;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  .mission-item {
+    background-color: #FFFF00;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  
+  .mission-item h3, .mission-item h4 {
+    color: #1a0537;
+  }

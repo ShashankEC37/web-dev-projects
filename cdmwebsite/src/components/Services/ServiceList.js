@@ -10,7 +10,7 @@ export const services = [
     title: 'Web Development',
     image: WebDevelopment,
     plans: [
-      { name: 'Basic', price: '$99', features: ['Feature 1', 'Feature 2', 'Feature 3'] },
+      { name: 'Basic', price: '$99', features: ['Static Websites', 'Feature 2', 'Feature 3'] },
       { name: 'Premium', price: '$199', features: ['Feature 1', 'Feature 2', 'Feature 3'] },
       { name: 'Premium Plus', price: '$299', features: ['Feature 1', 'Feature 2', 'Feature 3'] },
     ],

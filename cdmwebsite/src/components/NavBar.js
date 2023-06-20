@@ -6,7 +6,9 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { PhoneNumberDisplay } from './Home/Call';
 import { MailIcon } from "./Home/Mail";
+import Location  from "./Home/Location"
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import "./navbar.css"
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -75,7 +77,7 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="md" style={scrolled ? { ...navbarStyle, ...{ background: 'black' } } : navbarStyle}>
+    <Navbar expand="md" style={scrolled ? { ...navbarStyle, ...{   background: "black" } } : navbarStyle}>
       <Container>
         <Navbar.Brand href="/">
           <img src={Logo} alt="Logo" style={logoStyle} />
@@ -93,6 +95,13 @@ export const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link
+              href="/about"
+              className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('about')}
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
               href="/services"
               className={activeLink === 'ServicesList' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('ServicesList')}
@@ -104,15 +113,9 @@ export const NavBar = () => {
               className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('projects')}
             >
-              Work
+              Portfolio
             </Nav.Link>
-            <Nav.Link
-              href="/#projects"
-              className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('projects')}
-            >
-              About
-            </Nav.Link>
+           
           </Nav>
           <span className="navbar-text">
             <button
@@ -143,16 +146,21 @@ export const NavBar = () => {
                   }}
                 >
                   <div style={{ textAlign: 'center' }}>
+                  <div className="connect-links">
                     <PhoneNumberDisplay />
                     <MailIcon />
+                    <Location />
+                    </div>
                   </div>
                 </span>
               )}
             </button>
             <div className="social-icon" style={socialIconStyle}>
+              <div className="social-links">
               <a href="#"><img src={navIcon1} alt="" /></a>
               <a href="#"><img src={navIcon2} alt="" /></a>
               <a href="#"><img src={navIcon3} alt="" /></a>
+              </div>
             </div>
           </span>
         </Navbar.Collapse>

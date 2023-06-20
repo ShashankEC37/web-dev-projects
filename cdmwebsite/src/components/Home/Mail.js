@@ -1,3 +1,4 @@
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
@@ -6,8 +7,17 @@ export const MailIcon = () => {
     const recipient = 'param@creativedigitalmedia.co.in';
     const subject = '';
     const body = 'Hi Creative Digital Media ';
+
     const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.open(mailtoLink, '_blank');
+
+    const mailLinkElement = document.createElement('a');
+    mailLinkElement.href = mailtoLink;
+    mailLinkElement.target = '_blank';
+    mailLinkElement.style.display = 'none';
+
+    document.body.appendChild(mailLinkElement);
+    mailLinkElement.click();
+    document.body.removeChild(mailLinkElement);
   };
 
   return (
@@ -17,3 +27,5 @@ export const MailIcon = () => {
     </div>
   );
 };
+
+

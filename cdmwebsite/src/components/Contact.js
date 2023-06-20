@@ -4,6 +4,7 @@ import contactImg from '../assets/img/contact-img.svg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+
 export const Contact = () => {
   const [data, setData] = useState({
     name: '',
@@ -183,6 +184,8 @@ export const Contact = () => {
           </Col>
         </Row>
       </Container>
+    
     </section>
+ 
   );
 };

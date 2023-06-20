@@ -46,8 +46,8 @@
   font-size: 4px; /* Adjust the value as desired */
 }
 
-.service-card__plans li {
-  margin-bottom: 5px;
+.service-card__plan {
+  text-align: left;
 }
 
 .service-card__features {

@@ -37,7 +37,7 @@ const ServiceCard = ({ title, image, plans }) => {
               </div>
             </div>
 
-            <p className="service-card__price">{plan.price}</p>
+           
             <ul className="service-card__features">
               {plan.features.map((feature) => (
                 <li key={feature}>{feature}</li>

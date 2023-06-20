@@ -83,7 +83,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 0px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -92,7 +92,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: darkblue;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -228,6 +228,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+}
+
+.custom-navbar {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.navbar-link {
+  font-size: 18px;
+}
+
+.logo-image {
+  width: 150px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.social-icon-row {
+  display: flex;
+}
+
+.social-icon-row a {
+  margin-right: 10px; /* Adjust the margin as per your requirement */
+}
+
+.social-icon-row a:last-child {
+  margin-right: 0;
 }
 
 /************ Banner Css ************/
@@ -540,7 +567,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 0 0 0 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -609,6 +636,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer img {
   width: 26%;
 }
+.newsletter-heading {
+  outline: 1px solid #000;
+  padding: 10px;
+}
 .footer p {
   font-weight: 400;
   font-size: 14px;
@@ -616,3 +647,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+@media (max-width: 767px) {
+  .newsletter-heading {
+    font-size: 16px;
+  }
+
+  .submit-col {
+    margin-top: 10px;
+  }
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 10px;
+}
+
+.scroll-item {
+  flex-shrink: 0;
+  margin-right: 10px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
